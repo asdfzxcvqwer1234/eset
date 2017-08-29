@@ -16,7 +16,7 @@
 <pre>
 <span>./bot cli<span>
 </pre>
-<h4> <strong>then open a termianl in same direction and Run the api (Helper) bot<br></strong>
+<h4> <strong>then open a termianl in same direction and Run the api (Helper) bot<br>(Dont forget to set Inline settings)</strong>
 <pre>
 <span>./bot api<span>
 </pre>
