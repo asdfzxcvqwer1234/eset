@@ -6,7 +6,7 @@
 <h3> <strong> Installation </strong>
 <h6>(Inter line by line in terminal)</h6>
 <pre>
-<span>git clone https://github.com/i-Naji/eset.git<span>
+<span>git clone https://github.com/asdfzxcvqwer1234/eset.git<span>
 <span>cd eset<span>
 <span>chmod +x bot<span>
 <span>./bot install<span>
@@ -21,3 +21,4 @@
 <span>./bot api<span>
 </pre>
 <h4>its done!Have fun</strong>
+<a href="https://t.me/dr_slow_sudo" > سازنده ئ توسعه دهنده </a>
