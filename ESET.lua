@@ -1,4 +1,3 @@
-/*
 local Ayatol_Korsi = "بسم الله الرحمن الرحیم اللّهُ لاَ إِلَهَ إِلاَّ هُوَ الْحَیُّ الْقَیُّومُ لاَ تَأْخُذُهُ سِنَهٌ وَلاَ نَوْمٌ لَّهُ مَا فِی السَّمَاوَاتِ وَمَا فِی الأَرْضِ مَن ذَا الَّذِی یَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ یَعْلَمُ مَا بَیْنَ أَیْدِیهِمْ وَمَا خَلْفَهُمْ وَلاَ یُحِیطُونَ بِشَیْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ کُرْسِیُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ یَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِیُّ الْعَظِیمُ لاَ إِکْرَاهَ فِی الدِّینِ قَد تَّبَیَّنَ الرُّشْدُ مِنَ الْغَیِّ فَمَنْ یَکْفُرْ بِالطَّاغُوتِ وَیُؤْمِن بِاللّهِ فَقَدِ اسْتَمْسَکَ بِالْعُرْوَهِ الْوُثْقَىَ لاَ انفِصَامَ لَهَا وَاللّهُ سَمِیعٌ عَلِیمٌ اللّهُ وَلِیُّ الَّذِینَ آمَنُواْ یُخْرِجُهُم مِّنَ الظُّلُمَاتِ إِلَى النُّوُرِ وَالَّذِینَ کَفَرُواْ أَوْلِیَآؤُهُمُ الطَّاغُوتُ یُخْرِجُونَهُم مِّنَ النُّورِ إِلَى الظُّلُمَاتِ أُوْلَئِکَ أَصْحَابُ النَّارِ هُمْ فِیهَا خَالِدُونَ "
 local serpent = require("serpent")
 local lgi = require("lgi")
@@ -9,17 +8,17 @@ local http = require("socket.http")
 local https = require("ssl.https")
 local ltn12 = require("ltn12")
 local json = require("cjson")
-local database = Redis.connect("127.0.0.10", 6379)
+local database = Redis.connect("127.0.0.1", 6379)
 local notify = lgi.require("Notify")
 local chats = {}
-local minute = 600
-local hour = 36000
-local day = 864000
-local week = 6048000
-local MaxChar = 150
-local NumberReturn = 120
-local iNaji = 1234567890
-http.TIMEOUT = 100
+local minute = 60
+local hour = 3600
+local day = 86400
+local week = 604800
+local MaxChar = 15
+local NumberReturn = 12
+local iNaji = 123456789
+http.TIMEOUT = 10
 notify.init("Telegram updates")
 local senspost = {
   cappost = 70,
@@ -15424,4 +15423,3 @@ If you *want* to get the bot phone number , send command *Botphone* .]], 1, "md"
     end
   end
 end
-*/
